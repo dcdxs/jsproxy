@@ -29,7 +29,7 @@
 </head>
 <body>
   <div class="box">
-    <input id="txtURL" type="text" value="www.google.com" autofocus>
+    <input id="txtURL" type="text" value="" autofocus>
   </div>
   <div class="box">
     <button id="btnGo">Go</button>
@@ -59,7 +59,7 @@
     btnGo.onclick = function() {
       const text = txtURL.value.trim()
       if (text) {
-        const url = './-----' + text
+        const url = './-----https://gy-xi.vercel.app/search?q=' + text
         open(url, '_blank', 'noopener,noreferrer')
       }
     }
@@ -114,7 +114,7 @@
     }
 
     const SITE_LIST = [
-      ['google', ''],
+      ['google', 'gy-xi.vercel.app'],
       ['youtube', ''],
       ['twitter', 'twitter.com/google'],
       ['flickr', ''],
@@ -122,7 +122,7 @@
       ['twitch', 'www.twitch.tv/'],
       ['reddit', ''],
       ['wiki', 'zh.wikipedia.org/'],
-      ['gist', 'gist.github.com/'],
+      ['github', 'www.github.com/'],
       ['facebook', 'facebook.com/Google/'],
       ['blogger', ''],
     ]
